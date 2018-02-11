@@ -9,7 +9,7 @@ public class bolinha : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GetComponent<Rigidbody2D> ().AddForce (new Vector2 (forca_bolinha, forca_bolinha));
+		GetComponent<Rigidbody2D> ().AddForce (new Vector2 (forca_bolinha+200.0f, forca_bolinha));
 		print (forca_bolinha);
 		
 	}
