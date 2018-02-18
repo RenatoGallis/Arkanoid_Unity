@@ -9,16 +9,11 @@ public class bolinha : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GetComponent<Rigidbody2D> ().AddForce (new Vector2 (forca_bolinha+200.0f, forca_bolinha));
-		print (forca_bolinha);
-		
+		GetComponent<Rigidbody2D> ().AddForce (new Vector2 (forca_bolinha, forca_bolinha));
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		print (PrincipalScript.qtd_pontos);
-		
-	}
+	void Update () {}
 
 	void OnCollisionEnter2D(Collision2D c){
 
